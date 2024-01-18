@@ -1,0 +1,60 @@
+<head>
+<style>
+    table.tb { border-collapse: collapse; width:1500px; margin-left: auto; margin-right: auto;}
+    .tb th, .tb td { padding: 5px; border: solid 1px #777; }
+    .tb th { background-color: lightblue;}
+  </style>
+  </head>
+<body>
+<h2>ng Directives using *ngIf Condition</h2> 
+
+
+
+<div *ngIf="showText">
+    This text is shown when text value is True!
+</div>
+
+<button (click)="toggleText()">Toggle Text</button>
+
+<br>
+<br>
+<button (click)="toggleText()">
+    {{showText ? "Hide Text" : "Show Text" }}
+</button>
+
+<br>
+<br>
+
+<div id="myTable"> 
+    <table class="tb" id="mytable" border = "1"> 
+        <thead> 
+            <tr> 
+                <th>Name</th> 
+                <th>Email</th> 
+                <th>Role</th> 
+            </tr> 
+        </thead> 
+            <tbody> 
+                <tr *ngFor="let user of staff"> 
+                <td>{{user.firstName}} {{user.lastName}}</td> 
+                <td>{{user.email}}</td> 
+                <td>{{user.role}}</td> 
+            </tr> 
+            </tbody> 
+    </table>
+</div>
+    <br>
+    <button onclick="hideit()">Hide Table</button>
+
+<script>
+  function hideit() {
+  var x = document.getElementById("myTable");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script> 
+
+</body>
