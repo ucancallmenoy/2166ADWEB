@@ -1,0 +1,49 @@
+
+
+<header class="bg-dark py-5">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <div class="text-center my-5">
+                    <h1 class="display-5 fw-bolder text-white mb-2">Join our Fragrance Business!</h1>
+                    <p class="lead text-white-50 mb-4">Embark on a scented journey of unparalleled elegance and financial success by joining our fragrance business, where the artistry of captivating aromas meets a lucrative opportunity, allowing you to indulge in a world of exquisite perfumes while building a rewarding and flourishing business.</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#form-container">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="form-container">
+    <div>
+      <label for="name">Name:</label>
+      <input [(ngModel)]="user.name" id="name" placeholder="Enter your name" />
+    </div>
+  
+    <div>
+      <label for="email">Email:</label>
+      <input [(ngModel)]="user.email" id="email" placeholder="Enter your email" />
+    </div>
+  
+    <div>
+      <label for="age">Age:</label>
+      <input [(ngModel)]="user.age" id="age" placeholder="Enter your age" />
+    </div>
+  
+    <div>
+      <label for="contactNumber">Contact Number:</label>
+      <input [(ngModel)]="user.contactNumber" id="contactNumber" placeholder="Enter your contact number" />
+    </div>
+  
+    <button (click)="apply()">Apply</button>
+  
+    <div *ngIf="showSummary" id="summary-container">
+      <h2>Input Summary:</h2>
+      <p>Name: {{ user.name }}</p>
+      <p>Email: {{ user.email }}</p>
+      <p>Age: {{ user.age }}</p>
+      <p>Contact Number: {{ user.contactNumber }}</p>
+    </div>
+  </div>

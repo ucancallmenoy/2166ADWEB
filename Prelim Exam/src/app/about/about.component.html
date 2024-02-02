@@ -1,0 +1,19 @@
+<header class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1600x900')">
+    <div class="text-center my-5">
+        <img class="img-fluid rounded-circle mb-4" src="assets/pat.png" alt="..." />
+        <h1 class="text-white fs-3 fw-bolder">Patrick Perez</h1>
+        <p class="text-white-50 mb-0">Web Developer</p>
+    </div>
+</header>
+
+<div>
+    <h2>{{ greeting }}</h2>
+    <p [style.fontSize.px]="fontSize">{{ message }}</p>
+  </div>
+  
+  <input [(ngModel)]="userInput" placeholder="Type something..." />
+  <button (click)="increaseFontSize()">Enter</button>
+  
+  <div *ngIf="showEnteredText" class="entered-text">
+    {{ userInput }}
+  </div>

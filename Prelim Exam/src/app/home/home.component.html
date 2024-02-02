@@ -1,0 +1,124 @@
+
+<!-- Header-->
+<header class="bg-dark py-5">
+<div class="container px-4 px-lg-5 my-5">
+<div class="text-center text-white">
+<h1 class="display-4 fw-bolder">Shop Ni Noy</h1>
+<p class="lead fw-normal text-white-50 mb-0">Welcome to Shop Ni Noy, where enchanting scents meet an extraordinary business opportunity. Our passion for exquisite fragrances has driven us to curate a collection of captivating perfumes that not only elevate your senses but also open the door to a rewarding venture. Join us in the artistry of fine fragrances, and embark on a scented journey where luxury, entrepreneurship, and the allure of unique aromas converge. Discover the magic of Shop Ni Noy, where every scent tells a story and every entrepreneur finds their aromatic success.</p>
+</div>
+</div>
+</header>
+<form class="d-flex">
+    <button class="btn btn-outline-dark" type="submit">
+        <i class="bi-cart-fill me-1"></i>
+        Cart
+        <span class="badge bg-dark text-white ms-1 rounded-pill">{{clickCount}}</span>
+        <span class="badge bg-dark text-white ms-1 boxed-pill"><button (click)="resetClickCount()">Reset</button></span>
+    </button>
+</form>
+<!-- Section-->
+<section class="py-5">
+<div class="container px-4 px-lg-5 mt-5">
+<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+<div class="col mb-5">
+    <div class="card h-100">
+        <!-- Product image-->
+        <img class="card-img-top" src="https://fimgs.net/mdimg/perfume/375x500.56324.jpg" alt="..." />
+        <!-- Product details-->
+        <div class="card-body p-4">
+            <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder">Dior Sauvage</h5>
+                <!-- Product price-->
+                $40.00 - $80.00
+            </div>
+        </div>
+        <!-- Product actions-->
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center"><a class="mt-auto"><button (click)="clickMe()">Add to cart</button></a></div>
+        </div>
+    </div>
+</div>
+<div class="col mb-5">
+    <div class="card h-100">
+        <!-- Sale badge-->
+        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+        <!-- Product image-->
+        <img class="card-img-top" src="https://fimgs.net/mdimg/perfume/375x500.50757.jpg" alt="..." />
+        <!-- Product details-->
+        <div class="card-body p-4">
+            <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder">YSL Y</h5>
+                <!-- Product reviews-->
+                <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                </div>
+                <!-- Product price-->
+                <span class="text-muted text-decoration-line-through">$20.00</span>
+                $18.00
+            </div>
+        </div>
+        <!-- Product actions-->
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center"><a class="mt-auto"><button (click)="clickMe()">Add to cart</button></a></div>
+        </div>
+    </div>
+</div>
+<div class="col mb-5">
+    <div class="card h-100">
+        <!-- Sale badge-->
+        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+        <!-- Product image-->
+        <img class="card-img-top" src="https://www.davidjones.com/productimages/magnify/1/1796288_13152410_757743.jpg" alt="..." />
+        <!-- Product details-->
+        <div class="card-body p-4">
+            <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder">Sale Item</h5>
+                <!-- Product price-->
+                <span class="text-muted text-decoration-line-through">$50.00</span>
+                $25.00
+            </div>
+        </div>
+        <!-- Product actions-->
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center"><a class="mt-auto"><button (click)="clickMe()">Add to cart</button></a></div>
+        </div>
+    </div>
+</div>
+<div class="col mb-5">
+    <div class="card h-100">
+        <!-- Product image-->
+        <img class="card-img-top" src="https://ph-test-11.slatic.net/p/67466ce3c9f587ded3cfbaecf592a91b.jpg" alt="..." />
+        <!-- Product details-->
+        <div class="card-body p-4">
+            <div class="text-center">
+                <!-- Product name-->
+                <h5 class="fw-bolder">Popular Item</h5>
+                <!-- Product reviews-->
+                <div class="d-flex justify-content-center small text-warning mb-2">
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                </div>
+                <!-- Product price-->
+                $40.00
+            </div>
+        </div>
+        <!-- Product actions-->
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center"><a class="mt-auto"><button (click)="clickMe()">Add to cart</button></a></div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer-->
